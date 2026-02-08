@@ -18,7 +18,7 @@ export default function Home() {
       <p className="absolute bottom-2">
         Created with ❤️ by{" "}
         <span className=" font-bold font-dancing-script text-2xl">
-          {a.charAt(0).toUpperCase() + from.substring(1)}
+          {a.charAt(0).toUpperCase() + a.substring(1)}
         </span>
       </p>
     </div>
