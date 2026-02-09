@@ -14,8 +14,8 @@ const geistMono = Geist_Mono({
 
 const dancingScript = Dancing_Script({
   variable: "--font-dancing-script",
-  subsets: ["latin"]
-})
+  subsets: ["latin"],
+});
 
 export const metadata: Metadata = {
   title: "SendWishes",
@@ -32,7 +32,9 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${dancingScript.variable} antialiased`}
       >
-        {children}
+        <div className="flex h-screen mx-auto max-w-100 bg-linear-to-b from-pink-300 p-4 to-pink-500 justify-center items-center">
+          {children}
+        </div>
       </body>
     </html>
   );

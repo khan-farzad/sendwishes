@@ -40,7 +40,7 @@ export default function Home() {
   };
 
   return (
-    <div className="flex h-screen bg-linear-to-b from-pink-300 p-4 to-pink-500 justify-center items-center">
+    <>
       <div className="bg-white relative text-red-700 flex flex-col justify-around items-center rounded-4xl w-full aspect-square text-center">
         <h1 className="text-4xl font-bold font-dancing-script">
           Make it Special 💖
@@ -74,6 +74,6 @@ export default function Home() {
         Created with ❤️ by <span className=" font-bold text-lg">Pulkit</span>{" "}
         and <span className=" font-bold text-lg">Farzad</span>
       </p>
-    </div>
+    </>
   );
 }

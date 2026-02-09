@@ -1,5 +1,5 @@
 "use client";
-import { use, useState } from "react";
+import { useState } from "react";
 import Modal from "../../_components/Modal";
 import Accepted from "@/app/_components/Accepted";
 import { useParams } from "next/navigation";
@@ -13,7 +13,7 @@ export default function Home() {
   const [accepted, setAccepted] = useState(false);
 
   return (
-    <div className="flex h-screen bg-linear-to-b from-pink-300 p-4 to-pink-500 justify-center items-center">
+    <>
       {accepted ? <Accepted /> : <Modal to={b} setAccepted={setAccepted} />}
       <p className="absolute bottom-2">
         Created with ❤️ by{" "}
@@ -21,6 +21,6 @@ export default function Home() {
           {a.charAt(0).toUpperCase() + a.substring(1)}
         </span>
       </p>
-    </div>
+    </>
   );
 }
